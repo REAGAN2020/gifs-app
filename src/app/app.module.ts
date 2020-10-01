@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GyfisComponent } from './gyfis/gyfis.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GyfisComponent
   ],
   imports: [
     BrowserModule,

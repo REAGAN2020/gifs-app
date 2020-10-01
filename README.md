@@ -1,27 +1,63 @@
 # GIFS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
+# ![gifs](https://github.com/REAGAN2020/gifs-app)
 
-## Development server
+## DESCRIPTION
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<table>
+<tr>
+<td>
+application that displays gifs
+</td>
+</tr>
+</table>
 
-## Code scaffolding
+## BDD
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This application enables you to view gifs and search for some.
 
-## Build
+## Demo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Here is a working live demo :
 
-## Running unit tests
+### Development
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Want to contribute? Great!
 
-## Running end-to-end tests
+To fix a bug or enhance an existing module, follow these steps:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- Fork the repo here:https://github.com/REAGAN2020/gifs-app
+- Create a new branch (`git checkout -b improve-feature`)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (`git commit -am 'Improve feature'`)
+- Push to the branch (`git push origin improve-feature`)
+- Create a Pull Request
 
-## Further help
+### Bug / Feature Request
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/REAGAN2020/gifs-app by including your search query and the expected result.
+
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/REAGAN2020/quote-1). Please include sample queries and their corresponding results.
+
+## Built with
+
+- html
+- bootstrap
+- Angular
+- css
+- js
+
+### contacts
+
+- Incase of any feedback you can reach me though:
+  - OwitiReagan1
+    - 0717307127
+
+### Author
+
+> **REAGAN OWITI**
+
+## License
+
+[MIT](LICENSE.md) © @OwitiReagan

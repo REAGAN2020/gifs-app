@@ -1,7 +1,11 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="text-center">My Gify's</h1>
+            <div class="gifs">
+                <div class="gif" *ngFor="let gif of gifs">
+                    <img [src]="gif.images.downsized.url" alt="image">
+                </div>
+            </div>
         </div>
     </div>
 </div>

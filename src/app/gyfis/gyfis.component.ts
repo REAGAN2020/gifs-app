@@ -1,21 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { GIFSServiceService } from '../gifs-service.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-gyfis',
   templateUrl: './gyfis.component.html',
   styleUrls: ['./gyfis.component.css']
 })
-export class GyfisComponent implements OnInit {
+export class GyfisComponent implements OnInit,OnDestroy {
   gifs: any[] = [];
+  subscription:Subscription
   constructor(private gifsService:GIFSServiceService) { }
 
   ngOnInit(): void {
     this.gifsService.getGyfs()
+    this.subscription = this.gifsService.getGifs()
       .subscribe((response: any) => {
-        console.log('Data', response)
-        this.gifs = response.data;
+        this.gifs = response;
       });
   }
-
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+ }
 }

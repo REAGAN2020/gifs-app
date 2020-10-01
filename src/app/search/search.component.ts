@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {GIFSServiceService} from '../gifs-service.service'
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
-  constructor() { }
+  constructor(private GIFSService:GIFSServiceService) { }
 
   ngOnInit(): void {
   }
 
+  Search(searchTerm:string) {
+    if (searchTerm !== '') {
+      this.GIFSService.searchTerm(searchTerm)
+   
+    }
+  }
+  
 }

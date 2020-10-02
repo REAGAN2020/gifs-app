@@ -13,14 +13,14 @@ export class GIFSServiceService {
   constructor(private http: HttpClient) { }
 
   getGyfs() {
-    var url = `https://api.giphy.com/v1/gifs/trending?api_key=${environment.gifApiKey}&limit50`
+    var url = `https://api.giphy.com/v1/gifs/trending?api_key=${environment.gifApiKey}&limit=50`
     return this.http.get(url)
       .subscribe((response: any) => {
         this.gifs.next(response.data);
     })
   }
   searchTerm(gifName) {
-    var url = `https://api.giphy.com/v1/gifs/search?q=$(gifName)api_key=${environment.gifApiKey}&limit50`
+    var url =`https://api.giphy.com/v1/gifs/search?q=$(gifName)api_key=${environment.gifApiKey}&limit=50`
     return this.http.get(url)
       .subscribe((response: any) => {
         this.gifs.next(response.data);

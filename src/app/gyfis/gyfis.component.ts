@@ -17,6 +17,7 @@ export class GyfisComponent implements OnInit,OnDestroy {
     this.subscription = this.gifsService.getGifs()
       .subscribe((response: any) => {
         this.gifs = response;
+        console.log(response)
       });
   }
   ngOnDestroy() {
